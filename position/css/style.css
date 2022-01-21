@@ -1,0 +1,215 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: 0px;
+}
+.container{
+    height: 70px;
+    /* background-color: rgba(248, 213, 213, 0.589); */
+    max-width: 90%;
+    margin: auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list ul{
+    display: flex;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0px;
+    /* background-color: burlywood; */
+}
+.list ul li{
+    margin: 0px 5px;
+    padding: 0px 7px;
+    /* background-color: chartreuse; */
+    width: 70px;
+    text-align: center;
+}
+.list ul li:hover{
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+}
+.logo img{
+    height: 50px;
+}
+.social_media{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 13px;
+}
+.social_media i{
+    margin: 3px;
+}
+.pic{
+    height: 300px;
+    width: 600px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cercle{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+.slider_pic{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pic1{
+    height: 300px;
+    width: 600px;
+    background-color: green;
+   position: relative;
+}
+.cercle1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+.dark{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flag{
+    height: 300px;
+    width: 600px;
+    background-color: green;
+    position: relative;
+    display: flex;
+}
+.circle1{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    transform: translate(50%,50%);
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+.circle2{
+    position: absolute;
+    top: 30px;
+    left:60px;
+    transform: translate(50%,50%);
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 47, 255);
+    border-radius: 50%;
+}
+.circle3{
+    position: absolute;
+    top: -20;
+    left:30;
+    transform: translate(50%,50%);
+    height: 100px;
+    width: 100px;
+    background-color: rgb(238, 255, 0);
+    border-radius: 50%;
+}
+.flag1{
+    height: 300px;
+    width: 600px;
+    background-color: green;
+    position: relative;
+}
+.flag1::before{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(17, 221, 170);
+    position:absolute;
+    content: "";
+    top: 70px;
+    left: 190px;
+}
+.flag1::after{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(221, 126, 17);
+    position:absolute;
+    content: "";
+    top: 50px;
+    left: 250px;
+}
+
+
+/* .circle0{
+    position: absolute;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    transform: translate(50%,50%);
+    height: 100px;
+    width: 100px;
+    background-color: rgb(238, 255, 0);
+    border-radius: 50%;
+} */
+
+.btn{
+    margin: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 150px;
+    background-color: blueviolet;
+    color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: black 5px 8px 6px; */
+}
+.btn:hover{
+    box-shadow: rgb(115, 5, 218) 5px 8px 6px;
+}
+.btn::after{
+    content: '';
+    bottom: 0%;
+    left: 0%;
+    width: 5%;
+    height: 10%;
+    border-bottom: red 5px solid ;
+    border-left: rgb(0, 110, 255) 5px solid ;
+    position: absolute;
+    transition: all linear 0.3s;
+    z-index: -1;
+}
+.btn:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.btn::before{
+    content: '';
+    top: 0%;
+    right: 0%;
+    width: 5%;
+    height: 10%;
+    border-top: rgb(31, 6, 255) 5px solid ;
+    border-right: 5px solid chocolate ;
+    position: absolute;
+    transition: all linear 0.3s;
+    z-index: -1;
+}
+.btn:hover:before{
+    width: 100%;
+    height: 100%;
+ 
+}
